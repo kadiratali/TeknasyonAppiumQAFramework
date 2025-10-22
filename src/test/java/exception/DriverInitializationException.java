@@ -1,4 +1,4 @@
-package driver;
+package exception;
 
 /**
  * Custom exception for driver initialization failures.

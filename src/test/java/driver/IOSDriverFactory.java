@@ -1,5 +1,6 @@
 package driver;
 
+import exception.DriverInitializationException;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.options.XCUITestOptions;

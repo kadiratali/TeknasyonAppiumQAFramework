@@ -9,22 +9,18 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
-        <!-- Diğer Projenizden Gelen Gelişmiş Ayarlar -->
         <timestamp>${maven.build.timestamp}</timestamp>
         <maven.build.timestamp.format>mmHHddMMyyyy</maven.build.timestamp.format>
         <run.name>${timestamp}</run.name>
-        <aspectj.version>1.9.22.1</aspectj.version> <!-- Allure adımları için gerekli -->
+        <aspectj.version>1.9.22.1</aspectj.version>
         <baseFeatureName>Feature</baseFeatureName>
         <browser>chrome</browser>
         <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
         <forkCount>1</forkCount>
         <java.version>17</java.version>
-
-        <!-- Projenizin Temel Ayarları -->
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <!-- Versiyonlar -->
         <appium.version>8.6.0</appium.version>
         <cucumber.version>7.18.1</cucumber.version>
         <testng.version>7.10.2</testng.version>

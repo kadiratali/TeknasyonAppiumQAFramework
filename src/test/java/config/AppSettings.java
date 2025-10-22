@@ -38,14 +38,6 @@ public class AppSettings {
     }
 
     /**
-     * Appium sunucu URL'sini config.json'dan döndürür.
-     * @return Appium URL (String)
-     */
-    public static String getAppiumUrl() {
-        return (String) config.get("appiumUrl");
-    }
-
-    /**
      * Aktif platformu (android/ios) config.json'dan döndürür.
      * @return Platform adı (String)
      */
@@ -59,12 +51,9 @@ public class AppSettings {
      * @return Capabilities (JSONObject)
      */
     public static JSONObject getCapabilities() {
-        // "platform" anahtarının değerine göre (örn: "android")
-        // ilgili JSON nesnesini (örn: "android" nesnesini) döndürür.
         return (JSONObject) config.get(platform);
     }
 
-    // Bu sınıfın bir nesnesinin oluşturulmasını engelle
     private AppSettings() {
     }
 }

@@ -1,6 +1,7 @@
 package driver;
 
 import config.AppSettings;
+import exception.DriverInitializationException;
 import io.appium.java_client.AppiumDriver;
 import org.json.simple.JSONObject;
 import org.openqa.selenium.MutableCapabilities;

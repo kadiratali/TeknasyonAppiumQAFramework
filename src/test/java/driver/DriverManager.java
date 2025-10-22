@@ -1,6 +1,7 @@
 package driver;
 
 import config.AppSettings;
+import exception.DriverInitializationException;
 import io.appium.java_client.AppiumDriver;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

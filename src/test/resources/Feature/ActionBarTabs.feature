@@ -1,6 +1,6 @@
 Feature: Manage Action Bar Tabs in the App
 
-  @Regression @ActionBar @ReinstallApp
+  @Regression @ActionBar @ResetAppBeforeTest
   Scenario: Verify adding and removing Action Bar Tabs
     Given the user navigates to the following menu
       | MenuItem        |

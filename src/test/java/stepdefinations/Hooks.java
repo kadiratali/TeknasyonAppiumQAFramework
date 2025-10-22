@@ -16,9 +16,9 @@ import org.slf4j.LoggerFactory;
 public class Hooks {
 
     private static final Logger logger = LoggerFactory.getLogger(Hooks.class);
-    private static final String TARGET_TAG = "@ReinstallApp";
+    private static final String TARGET_TAG = "@ResetAppBeforeTest";
 
-    // Reinstall için gerekli ayarları bir kez yükle
+    // ResetAppBeforeTest için gerekli ayarları bir kez yükle
     private static final JSONObject platformSettings = AppSettings.getCapabilities();
     private static final String APP_PACKAGE = (String) platformSettings.get("appPackage");
     private static final String APP_PATH = (String) platformSettings.get("app");
@@ -33,7 +33,7 @@ public class Hooks {
 
         DriverManager.initializeDriver();
         if (scenario.getSourceTagNames().contains(TARGET_TAG)) {
-            logger.info("Senaryo @ReinstallApp tag'ine sahip. Uygulama yeniden yükleniyor...");
+            logger.info("Senaryo @ResetAppBeforeTest tag'ine sahip. Uygulama yeniden yükleniyor...");
             AppiumDriver driver = DriverManager.getDriver();
             reinstallApp(driver);
         }
@@ -99,8 +99,6 @@ public class Hooks {
     }
 
     private void reinstallAppOnIOS(IOSDriver iosDriver) {
-        // Not: iOS için 'bundleId' kullanmak daha doğru olabilir.
-        // Gerekirse config.json'a 'bundleId' ekleyin.
         try {
             if (iosDriver.isAppInstalled(APP_PACKAGE)) {
                 iosDriver.removeApp(APP_PACKAGE);
