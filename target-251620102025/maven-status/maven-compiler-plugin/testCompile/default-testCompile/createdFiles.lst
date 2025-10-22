@@ -1,7 +1,0 @@
-driver/DriverFactory.class
-pages/CommonPage.class
-stepdefinations/CommonSteps.class
-config/AppSettings.class
-pages/BasePage.class
-runners/TestRunner.class
-stepdefinations/Hooks.class
