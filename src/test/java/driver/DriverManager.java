@@ -134,13 +134,4 @@ public class DriverManager {
                     Thread.currentThread().getId());
         }
     }
-
-    /**
-     * Checks if driver is initialized for current thread.
-     *
-     * @return true if driver exists, false otherwise
-     */
-    public static boolean isDriverInitialized() {
-        return driver.get() != null;
-    }
 }
