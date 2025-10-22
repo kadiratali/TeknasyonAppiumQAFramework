@@ -1,0 +1,19 @@
+{
+  "appiumUrl": "http://localhost:4723",
+  "platform": "android",
+  "android": {
+    "platformName": "Android",
+    "deviceName": "emulator-5554",
+    "app": "/Users/katali/Desktop/TeknasyonAppiumQAFramework/app/ApiDemos-debug.apk",
+    "platformVersion": "12.0",
+    "automationName" : "UiAutomator2",
+    "appPackage" : "io.appium.android.apis",
+    "autoGrantPermissions": true
+  },
+  "ios": {
+    "platformName": "iOS",
+    "deviceName": "iPhone Simulator",
+    "app": "path/to/ios/app.app",
+    "platformVersion": "15.0"
+  }
+}

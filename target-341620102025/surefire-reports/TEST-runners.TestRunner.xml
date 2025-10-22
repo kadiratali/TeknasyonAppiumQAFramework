@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runners.TestRunner" time="8.965" tests="1" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="cucumber.features" value="src/test/resources/Feature"/>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/katali/Desktop/TeknasyonAppiumQAFramework/target-341620102025/test-classes:/Users/katali/Desktop/TeknasyonAppiumQAFramework/target-341620102025/classes:/Users/katali/.m2/repository/io/appium/java-client/8.6.0/java-client-8.6.0.jar:/Users/katali/.m2/repository/org/seleniumhq/selenium/selenium-api/4.13.0/selenium-api-4.13.0.jar:/Users/katali/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.13.0/selenium-remote-driver-4.13.0.jar:/Users/katali/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/katali/.m2/repository/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar:/Users/katali/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/katali/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/katali/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/katali/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/Users/katali/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/Users/katali/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/katali/.m2/repository/io/netty/netty-buffer/4.1.96.Final/netty-buffer-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-codec-http/4.1.96.Final/netty-codec-http-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-codec/4.1.96.Final/netty-codec-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-handler/4.1.96.Final/netty-handler-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-common/4.1.96.Final/netty-common-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.96.Final/netty-transport-classes-epoll-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.96.Final/netty-transport-classes-kqueue-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-transport-native-epoll/4.1.96.Final/netty-transport-native-epoll-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.96.Final/netty-transport-native-kqueue-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.96.Final/netty-transport-native-unix-common-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-transport/4.1.96.Final/netty-transport-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-resolver/4.1.96.Final/netty-resolver-4.1.96.Final.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-api/1.28.0/opentelemetry-api-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-context/1.28.0/opentelemetry-context-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.28.0/opentelemetry-exporter-logging-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.28.0/opentelemetry-sdk-metrics-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.28.0-alpha/opentelemetry-extension-incubator-1.28.0-alpha.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.28.0/opentelemetry-sdk-logs-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.28.0/opentelemetry-sdk-common-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.28.0/opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.28.0/opentelemetry-sdk-extension-autoconfigure-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.28.0-alpha/opentelemetry-api-events-1.28.0-alpha.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.28.0/opentelemetry-sdk-trace-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.28.0/opentelemetry-sdk-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha.jar:/Users/katali/.m2/repository/net/bytebuddy/byte-buddy/1.14.5/byte-buddy-1.14.5.jar:/Users/katali/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/katali/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/katali/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/katali/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/katali/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/katali/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/katali/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/katali/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/katali/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/katali/.m2/repository/org/seleniumhq/selenium/selenium-http/4.13.0/selenium-http-4.13.0.jar:/Users/katali/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/katali/.m2/repository/org/seleniumhq/selenium/selenium-json/4.13.0/selenium-json-4.13.0.jar:/Users/katali/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.13.0/selenium-manager-4.13.0.jar:/Users/katali/.m2/repository/org/seleniumhq/selenium/selenium-os/4.13.0/selenium-os-4.13.0.jar:/Users/katali/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/katali/.m2/repository/org/seleniumhq/selenium/selenium-support/4.13.0/selenium-support-4.13.0.jar:/Users/katali/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/katali/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/Users/katali/.m2/repository/commons-io/commons-io/2.14.0/commons-io-2.14.0.jar:/Users/katali/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/katali/.m2/repository/io/cucumber/cucumber-java/7.18.1/cucumber-java-7.18.1.jar:/Users/katali/.m2/repository/io/cucumber/cucumber-core/7.18.1/cucumber-core-7.18.1.jar:/Users/katali/.m2/repository/io/cucumber/cucumber-gherkin/7.18.1/cucumber-gherkin-7.18.1.jar:/Users/katali/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.18.1/cucumber-gherkin-messages-7.18.1.jar:/Users/katali/.m2/repository/io/cucumber/gherkin/28.0.0/gherkin-28.0.0.jar:/Users/katali/.m2/repository/io/cucumber/messages/24.1.0/messages-24.1.0.jar:/Users/katali/.m2/repository/io/cucumber/testng-xml-formatter/0.2.0/testng-xml-formatter-0.2.0.jar:/Users/katali/.m2/repository/io/cucumber/query/12.2.0/query-12.2.0.jar:/Users/katali/.m2/repository/io/cucumber/tag-expressions/6.1.0/tag-expressions-6.1.0.jar:/Users/katali/.m2/repository/io/cucumber/cucumber-expressions/17.1.0/cucumber-expressions-17.1.0.jar:/Users/katali/.m2/repository/io/cucumber/datatable/7.18.1/datatable-7.18.1.jar:/Users/katali/.m2/repository/io/cucumber/cucumber-plugin/7.18.1/cucumber-plugin-7.18.1.jar:/Users/katali/.m2/repository/io/cucumber/docstring/7.18.1/docstring-7.18.1.jar:/Users/katali/.m2/repository/io/cucumber/html-formatter/21.4.1/html-formatter-21.4.1.jar:/Users/katali/.m2/repository/io/cucumber/junit-xml-formatter/0.5.0/junit-xml-formatter-0.5.0.jar:/Users/katali/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar:/Users/katali/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/katali/.m2/repository/io/cucumber/cucumber-testng/7.18.1/cucumber-testng-7.18.1.jar:/Users/katali/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/katali/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/katali/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/katali/.m2/repository/io/qameta/allure/allure-cucumber7-jvm/2.29.0/allure-cucumber7-jvm-2.29.0.jar:/Users/katali/.m2/repository/io/qameta/allure/allure-java-commons/2.29.0/allure-java-commons-2.29.0.jar:/Users/katali/.m2/repository/io/qameta/allure/allure-model/2.29.0/allure-model-2.29.0.jar:/Users/katali/.m2/repository/io/qameta/allure/allure-testng/2.29.0/allure-testng-2.29.0.jar:/Users/katali/.m2/repository/io/qameta/allure/allure-test-filter/2.29.0/allure-test-filter-2.29.0.jar:/Users/katali/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/Users/katali/.m2/repository/junit/junit/4.10/junit-4.10.jar:/Users/katali/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/Users/katali/.m2/repository/ch/qos/logback/logback-classic/1.5.13/logback-classic-1.5.13.jar:/Users/katali/.m2/repository/ch/qos/logback/logback-core/1.5.13/logback-core-1.5.13.jar:"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Europe/Istanbul"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="dataproviderthreadcount" value="3"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="TR"/>
+    <property name="sun.boot.library.path" value="/Users/katali/.sdkman/candidates/java/21.0.2-tem/lib"/>
+    <property name="sun.java.command" value="/Users/katali/Desktop/TeknasyonAppiumQAFramework/target-341620102025/surefire/surefirebooter-20251020193403694_3.jar /Users/katali/Desktop/TeknasyonAppiumQAFramework/target-341620102025/surefire 2025-10-20T19-34-03_633-jvmRun1 surefire-20251020193403694_1tmp surefire_0-20251020193403694_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/katali/Desktop/TeknasyonAppiumQAFramework/target-341620102025/test-classes:/Users/katali/Desktop/TeknasyonAppiumQAFramework/target-341620102025/classes:/Users/katali/.m2/repository/io/appium/java-client/8.6.0/java-client-8.6.0.jar:/Users/katali/.m2/repository/org/seleniumhq/selenium/selenium-api/4.13.0/selenium-api-4.13.0.jar:/Users/katali/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.13.0/selenium-remote-driver-4.13.0.jar:/Users/katali/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/katali/.m2/repository/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar:/Users/katali/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/katali/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/katali/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/katali/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/Users/katali/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/Users/katali/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/katali/.m2/repository/io/netty/netty-buffer/4.1.96.Final/netty-buffer-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-codec-http/4.1.96.Final/netty-codec-http-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-codec/4.1.96.Final/netty-codec-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-handler/4.1.96.Final/netty-handler-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-common/4.1.96.Final/netty-common-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.96.Final/netty-transport-classes-epoll-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.96.Final/netty-transport-classes-kqueue-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-transport-native-epoll/4.1.96.Final/netty-transport-native-epoll-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.96.Final/netty-transport-native-kqueue-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.96.Final/netty-transport-native-unix-common-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-transport/4.1.96.Final/netty-transport-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-resolver/4.1.96.Final/netty-resolver-4.1.96.Final.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-api/1.28.0/opentelemetry-api-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-context/1.28.0/opentelemetry-context-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.28.0/opentelemetry-exporter-logging-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.28.0/opentelemetry-sdk-metrics-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.28.0-alpha/opentelemetry-extension-incubator-1.28.0-alpha.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.28.0/opentelemetry-sdk-logs-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.28.0/opentelemetry-sdk-common-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.28.0/opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.28.0/opentelemetry-sdk-extension-autoconfigure-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.28.0-alpha/opentelemetry-api-events-1.28.0-alpha.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.28.0/opentelemetry-sdk-trace-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.28.0/opentelemetry-sdk-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha.jar:/Users/katali/.m2/repository/net/bytebuddy/byte-buddy/1.14.5/byte-buddy-1.14.5.jar:/Users/katali/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/katali/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/katali/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/katali/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/katali/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/katali/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/katali/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/katali/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/katali/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/katali/.m2/repository/org/seleniumhq/selenium/selenium-http/4.13.0/selenium-http-4.13.0.jar:/Users/katali/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/katali/.m2/repository/org/seleniumhq/selenium/selenium-json/4.13.0/selenium-json-4.13.0.jar:/Users/katali/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.13.0/selenium-manager-4.13.0.jar:/Users/katali/.m2/repository/org/seleniumhq/selenium/selenium-os/4.13.0/selenium-os-4.13.0.jar:/Users/katali/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/katali/.m2/repository/org/seleniumhq/selenium/selenium-support/4.13.0/selenium-support-4.13.0.jar:/Users/katali/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/katali/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/Users/katali/.m2/repository/commons-io/commons-io/2.14.0/commons-io-2.14.0.jar:/Users/katali/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/katali/.m2/repository/io/cucumber/cucumber-java/7.18.1/cucumber-java-7.18.1.jar:/Users/katali/.m2/repository/io/cucumber/cucumber-core/7.18.1/cucumber-core-7.18.1.jar:/Users/katali/.m2/repository/io/cucumber/cucumber-gherkin/7.18.1/cucumber-gherkin-7.18.1.jar:/Users/katali/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.18.1/cucumber-gherkin-messages-7.18.1.jar:/Users/katali/.m2/repository/io/cucumber/gherkin/28.0.0/gherkin-28.0.0.jar:/Users/katali/.m2/repository/io/cucumber/messages/24.1.0/messages-24.1.0.jar:/Users/katali/.m2/repository/io/cucumber/testng-xml-formatter/0.2.0/testng-xml-formatter-0.2.0.jar:/Users/katali/.m2/repository/io/cucumber/query/12.2.0/query-12.2.0.jar:/Users/katali/.m2/repository/io/cucumber/tag-expressions/6.1.0/tag-expressions-6.1.0.jar:/Users/katali/.m2/repository/io/cucumber/cucumber-expressions/17.1.0/cucumber-expressions-17.1.0.jar:/Users/katali/.m2/repository/io/cucumber/datatable/7.18.1/datatable-7.18.1.jar:/Users/katali/.m2/repository/io/cucumber/cucumber-plugin/7.18.1/cucumber-plugin-7.18.1.jar:/Users/katali/.m2/repository/io/cucumber/docstring/7.18.1/docstring-7.18.1.jar:/Users/katali/.m2/repository/io/cucumber/html-formatter/21.4.1/html-formatter-21.4.1.jar:/Users/katali/.m2/repository/io/cucumber/junit-xml-formatter/0.5.0/junit-xml-formatter-0.5.0.jar:/Users/katali/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar:/Users/katali/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/katali/.m2/repository/io/cucumber/cucumber-testng/7.18.1/cucumber-testng-7.18.1.jar:/Users/katali/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/katali/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/katali/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/katali/.m2/repository/io/qameta/allure/allure-cucumber7-jvm/2.29.0/allure-cucumber7-jvm-2.29.0.jar:/Users/katali/.m2/repository/io/qameta/allure/allure-java-commons/2.29.0/allure-java-commons-2.29.0.jar:/Users/katali/.m2/repository/io/qameta/allure/allure-model/2.29.0/allure-model-2.29.0.jar:/Users/katali/.m2/repository/io/qameta/allure/allure-testng/2.29.0/allure-testng-2.29.0.jar:/Users/katali/.m2/repository/io/qameta/allure/allure-test-filter/2.29.0/allure-test-filter-2.29.0.jar:/Users/katali/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/Users/katali/.m2/repository/junit/junit/4.10/junit-4.10.jar:/Users/katali/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/Users/katali/.m2/repository/ch/qos/logback/logback-classic/1.5.13/logback-classic-1.5.13.jar:/Users/katali/.m2/repository/ch/qos/logback/logback-core/1.5.13/logback-core-1.5.13.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="allure.results.directory" value="/Users/katali/Desktop/TeknasyonAppiumQAFramework/target-341620102025/allure-results"/>
+    <property name="user.home" value="/Users/katali"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="/Users/katali/.sdkman/candidates/java/21.0.2-tem"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/katali/Desktop/TeknasyonAppiumQAFramework"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/katali/Desktop/TeknasyonAppiumQAFramework/target-341620102025/surefire/surefirebooter-20251020193403694_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="21.0.2+13-LTS"/>
+    <property name="user.name" value="katali"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.5"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="browser" value="chrome"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.2+13"/>
+    <property name="localRepository" value="/Users/katali/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/89/p9vwmd697t94vh6bjdl14h900000gn/T/"/>
+    <property name="java.version" value="21.0.2"/>
+    <property name="cucumber.filter.tags" value="@Regression"/>
+    <property name="user.dir" value="/Users/katali/Desktop/TeknasyonAppiumQAFramework"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/katali/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.2+13-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;Validate default and updated texts in Custom Title Activity&quot;, &quot;Custom Title Activity Validation&quot;](1)" classname="runners.TestRunner" time="8.323">
+    <failure message="Test failed" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Test failed
+	at org.testng.Assert.fail(Assert.java:111)
+	at pages.BasePage.assertFail(BasePage.java:110)
+	at pages.CommonPage.navigateToMenu(CommonPage.java:40)
+	at stepdefinations.CommonSteps.theUserNavigatesToMenu(CommonSteps.java:13)
+	at ✽.the user navigates to the following menu(file:///Users/katali/Desktop/TeknasyonAppiumQAFramework/src/test/resources/Feature/CustomTitleValidation.feature:5)
+]]></failure>
+    <system-out><![CDATA[19:34:04.704 [TestNG-PoolService-1] INFO config.AppSettings -- Konfigürasyon yüklendi. Platform: android
+19:34:04.706 [TestNG-PoolService-1] INFO stepdefinations.Hooks -- Senaryo başlıyor: Validate default and updated texts in Custom Title Activity [Thread: 32]
+19:34:04.707 [TestNG-PoolService-1] INFO driver.DriverManager -- Platform: android için driver başlatılıyor...
+19:34:04.707 [TestNG-PoolService-1] DEBUG driver.DriverManager -- AndroidDriverFactory seçildi
+19:34:04.747 [TestNG-PoolService-1] DEBUG driver.AndroidDriverFactory -- Android Capability set: app = /Users/katali/Desktop/TeknasyonAppiumQAFramework/app/ApiDemos.apk
+19:34:04.747 [TestNG-PoolService-1] DEBUG driver.AndroidDriverFactory -- Android Capability set: appPackage = io.appium.android.apis
+19:34:04.747 [TestNG-PoolService-1] DEBUG driver.AndroidDriverFactory -- Android Capability set: platformVersion = 12.0
+19:34:04.747 [TestNG-PoolService-1] DEBUG driver.AndroidDriverFactory -- Android Capability set: automationName = UiAutomator2
+19:34:04.747 [TestNG-PoolService-1] DEBUG driver.AndroidDriverFactory -- Android Capability set: platformName = Android
+19:34:04.747 [TestNG-PoolService-1] DEBUG driver.AndroidDriverFactory -- Android Capability set: deviceName = emulator-5554
+19:34:04.747 [TestNG-PoolService-1] INFO driver.AndroidDriverFactory -- Android driver oluşturuluyor... Thread: 32
+19:34:04.820 [TestNG-PoolService-1] DEBUG io.netty.util.internal.logging.InternalLoggerFactory -- Using SLF4J as the default logging framework
+19:34:04.822 [TestNG-PoolService-1] DEBUG io.netty.util.ResourceLeakDetector -- -Dio.netty.leakDetection.level: simple
+19:34:04.822 [TestNG-PoolService-1] DEBUG io.netty.util.ResourceLeakDetector -- -Dio.netty.leakDetection.targetRecords: 4
+19:34:04.825 [TestNG-PoolService-1] DEBUG io.netty.util.ResourceLeakDetectorFactory -- Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@112fec18
+19:34:04.841 [TestNG-PoolService-1] DEBUG io.netty.util.internal.PlatformDependent0 -- -Dio.netty.noUnsafe: false
+19:34:04.841 [TestNG-PoolService-1] DEBUG io.netty.util.internal.PlatformDependent0 -- Java version: 21
+19:34:04.841 [TestNG-PoolService-1] DEBUG io.netty.util.internal.PlatformDependent0 -- sun.misc.Unsafe.theUnsafe: available
+19:34:04.842 [TestNG-PoolService-1] DEBUG io.netty.util.internal.PlatformDependent0 -- sun.misc.Unsafe.copyMemory: available
+19:34:04.842 [TestNG-PoolService-1] DEBUG io.netty.util.internal.PlatformDependent0 -- sun.misc.Unsafe.storeFence: available
+19:34:04.842 [TestNG-PoolService-1] DEBUG io.netty.util.internal.PlatformDependent0 -- java.nio.Buffer.address: available
+19:34:04.842 [TestNG-PoolService-1] DEBUG io.netty.util.internal.PlatformDependent0 -- direct buffer constructor: unavailable: Reflective setAccessible(true) disabled
+19:34:04.843 [TestNG-PoolService-1] DEBUG io.netty.util.internal.PlatformDependent0 -- java.nio.Bits.unaligned: available, true
+19:34:04.844 [TestNG-PoolService-1] DEBUG io.netty.util.internal.PlatformDependent0 -- jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @1187c9e8
+19:34:04.844 [TestNG-PoolService-1] DEBUG io.netty.util.internal.PlatformDependent0 -- java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
+19:34:04.844 [TestNG-PoolService-1] DEBUG io.netty.util.internal.PlatformDependent -- sun.misc.Unsafe: available
+19:34:04.845 [TestNG-PoolService-1] DEBUG io.netty.util.internal.PlatformDependent -- maxDirectMemory: 4294967296 bytes (maybe)
+19:34:04.845 [TestNG-PoolService-1] DEBUG io.netty.util.internal.PlatformDependent -- -Dio.netty.tmpdir: /var/folders/89/p9vwmd697t94vh6bjdl14h900000gn/T (java.io.tmpdir)
+19:34:04.845 [TestNG-PoolService-1] DEBUG io.netty.util.internal.PlatformDependent -- -Dio.netty.bitMode: 64 (sun.arch.data.model)
+19:34:04.845 [TestNG-PoolService-1] DEBUG io.netty.util.internal.PlatformDependent -- Platform: MacOS
+19:34:04.845 [TestNG-PoolService-1] DEBUG io.netty.util.internal.PlatformDependent -- -Dio.netty.maxDirectMemory: -1 bytes
+19:34:04.845 [TestNG-PoolService-1] DEBUG io.netty.util.internal.PlatformDependent -- -Dio.netty.uninitializedArrayAllocationThreshold: -1
+19:34:04.845 [TestNG-PoolService-1] DEBUG io.netty.util.internal.CleanerJava9 -- java.nio.ByteBuffer.cleaner(): available
+19:34:04.846 [TestNG-PoolService-1] DEBUG io.netty.util.internal.PlatformDependent -- -Dio.netty.noPreferDirect: false
+19:34:04.852 [TestNG-PoolService-1] DEBUG io.netty.util.internal.PlatformDependent -- org.jctools-core.MpscChunkedArrayQueue: available
+19:34:04.866 [TestNG-PoolService-1] DEBUG io.netty.util.internal.InternalThreadLocalMap -- -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+19:34:04.866 [TestNG-PoolService-1] DEBUG io.netty.util.internal.InternalThreadLocalMap -- -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+19:34:04.948 [TestNG-PoolService-1] DEBUG io.netty.handler.ssl.JdkSslContext -- Default protocols (JDK): [TLSv1.3, TLSv1.2] 
+19:34:04.948 [TestNG-PoolService-1] DEBUG io.netty.handler.ssl.JdkSslContext -- Default cipher suites (JDK): [TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_AES_128_GCM_SHA256, TLS_AES_256_GCM_SHA384]
+19:34:04.960 [TestNG-PoolService-1] DEBUG io.netty.util.concurrent.GlobalEventExecutor -- -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+19:34:04.970 [TestNG-PoolService-1] DEBUG io.netty.channel.MultithreadEventLoopGroup -- -Dio.netty.eventLoopThreads: 16
+19:34:04.975 [TestNG-PoolService-1] DEBUG io.netty.channel.nio.NioEventLoop -- -Dio.netty.noKeySetOptimization: false
+19:34:04.975 [TestNG-PoolService-1] DEBUG io.netty.channel.nio.NioEventLoop -- -Dio.netty.selectorAutoRebuildThreshold: 512
+19:34:05.007 [TestNG-PoolService-1] DEBUG io.netty.buffer.PooledByteBufAllocator -- -Dio.netty.allocator.numHeapArenas: 16
+19:34:05.007 [TestNG-PoolService-1] DEBUG io.netty.buffer.PooledByteBufAllocator -- -Dio.netty.allocator.numDirectArenas: 16
+19:34:05.007 [TestNG-PoolService-1] DEBUG io.netty.buffer.PooledByteBufAllocator -- -Dio.netty.allocator.pageSize: 8192
+19:34:05.007 [TestNG-PoolService-1] DEBUG io.netty.buffer.PooledByteBufAllocator -- -Dio.netty.allocator.maxOrder: 9
+19:34:05.007 [TestNG-PoolService-1] DEBUG io.netty.buffer.PooledByteBufAllocator -- -Dio.netty.allocator.chunkSize: 4194304
+19:34:05.007 [TestNG-PoolService-1] DEBUG io.netty.buffer.PooledByteBufAllocator -- -Dio.netty.allocator.smallCacheSize: 256
+19:34:05.007 [TestNG-PoolService-1] DEBUG io.netty.buffer.PooledByteBufAllocator -- -Dio.netty.allocator.normalCacheSize: 64
+19:34:05.007 [TestNG-PoolService-1] DEBUG io.netty.buffer.PooledByteBufAllocator -- -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+19:34:05.007 [TestNG-PoolService-1] DEBUG io.netty.buffer.PooledByteBufAllocator -- -Dio.netty.allocator.cacheTrimInterval: 8192
+19:34:05.007 [TestNG-PoolService-1] DEBUG io.netty.buffer.PooledByteBufAllocator -- -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+19:34:05.007 [TestNG-PoolService-1] DEBUG io.netty.buffer.PooledByteBufAllocator -- -Dio.netty.allocator.useCacheForAllThreads: false
+19:34:05.007 [TestNG-PoolService-1] DEBUG io.netty.buffer.PooledByteBufAllocator -- -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+19:34:05.015 [TestNG-PoolService-1] DEBUG io.netty.buffer.ByteBufUtil -- -Dio.netty.allocator.type: pooled
+19:34:05.015 [TestNG-PoolService-1] DEBUG io.netty.buffer.ByteBufUtil -- -Dio.netty.threadLocalDirectBufferSize: 0
+19:34:05.015 [TestNG-PoolService-1] DEBUG io.netty.buffer.ByteBufUtil -- -Dio.netty.maxThreadLocalCharBufferSize: 16384
+19:34:05.133 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId -- -Dio.netty.processId: 98811 (auto-detected)
+19:34:05.134 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil -- -Djava.net.preferIPv4Stack: false
+19:34:05.134 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil -- -Djava.net.preferIPv6Addresses: false
+19:34:05.136 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtilInitializations -- Loopback interface: lo0 (lo0, 0:0:0:0:0:0:0:1%lo0)
+19:34:05.136 [Forwarding newSession on session null to remote] DEBUG io.netty.util.NetUtil -- Failed to get SOMAXCONN from sysctl and file /proc/sys/net/core/somaxconn. Default: 128
+19:34:05.137 [Forwarding newSession on session null to remote] DEBUG io.netty.channel.DefaultChannelId -- -Dio.netty.machineId: 16:11:40:ff:fe:8d:ce:22 (auto-detected)
+19:34:05.159 [AsyncHttpClient-1-2] DEBUG io.netty.buffer.AbstractByteBuf -- -Dio.netty.buffer.checkAccessible: true
+19:34:05.159 [AsyncHttpClient-1-2] DEBUG io.netty.buffer.AbstractByteBuf -- -Dio.netty.buffer.checkBounds: true
+19:34:05.159 [AsyncHttpClient-1-2] DEBUG io.netty.util.ResourceLeakDetectorFactory -- Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@500b922
+19:34:05.175 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.NettyConnectListener -- Using new Channel '[id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]' for 'POST' to '/session'
+19:34:05.184 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler -- -Dio.netty.recycler.maxCapacityPerThread: 4096
+19:34:05.184 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler -- -Dio.netty.recycler.ratio: 8
+19:34:05.184 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler -- -Dio.netty.recycler.chunkSize: 32
+19:34:05.184 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler -- -Dio.netty.recycler.blocking: false
+19:34:05.184 [AsyncHttpClient-1-2] DEBUG io.netty.util.Recycler -- -Dio.netty.recycler.batchFastThreadLocalOnly: true
+19:34:08.554 [AsyncHttpClient-1-2] DEBUG io.netty.handler.codec.compression.Brotli -- brotli4j not in the classpath; Brotli support will be unavailable.
+19:34:08.555 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler -- 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session HTTP/1.1
+X-Idempotency-Key: a342ca49-2355-47db-b6ae-25a476dacb91
+User-Agent: appium/8.6.0 (selenium/4.13.0 (java mac))
+Content-Length: 432
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+Content-Length: 1049
+ETag: W/"419-5fHUhS64Yr9HsH+0S1cPRmtcHfM"
+Date: Mon, 20 Oct 2025 16:34:08 GMT
+Connection: keep-alive
+Keep-Alive: timeout=600
+
+19:34:08.560 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager -- Adding key: http://localhost:4723 for channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]
+19:34:08.611 [Forwarding setTimeout on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using pooled Channel '[id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]' for 'POST' to 'http://localhost:4723/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/timeouts'
+19:34:08.611 [Forwarding setTimeout on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using open Channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723] for POST '/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/timeouts'
+19:34:08.617 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler -- 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/f9731274-69b7-4174-91ce-9f4185bbb0aa/timeouts HTTP/1.1
+User-Agent: appium/8.6.0 (selenium/4.13.0 (java mac))
+Content-Length: 23
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+Content-Length: 14
+ETag: W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"
+Date: Mon, 20 Oct 2025 16:34:08 GMT
+Connection: keep-alive
+Keep-Alive: timeout=600
+
+19:34:08.617 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager -- Adding key: http://localhost:4723 for channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]
+19:34:08.619 [TestNG-PoolService-1] INFO driver.AndroidDriverFactory -- Android driver başarıyla oluşturuldu. Thread: 32
+19:34:08.619 [TestNG-PoolService-1] INFO driver.DriverManager -- Driver başarıyla başlatıldı. Thread: 32
+19:34:08.685 [TestNG-PoolService-1] INFO pages.CommonPage -- Navigating to menu item: App
+19:34:08.687 [Forwarding findElement on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using pooled Channel '[id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]' for 'POST' to 'http://localhost:4723/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element'
+19:34:08.687 [Forwarding findElement on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using open Channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723] for POST '/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element'
+19:34:09.159 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler -- 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element HTTP/1.1
+User-Agent: appium/8.6.0 (selenium/4.13.0 (java mac))
+Content-Length: 93
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+Content-Length: 137
+ETag: W/"89-WD+OqVXc++NNyKmSfy9AzybSXew"
+Date: Mon, 20 Oct 2025 16:34:09 GMT
+Connection: keep-alive
+Keep-Alive: timeout=600
+
+19:34:09.159 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager -- Adding key: http://localhost:4723 for channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]
+19:34:09.163 [Forwarding isElementDisplayed on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using pooled Channel '[id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]' for 'GET' to 'http://localhost:4723/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0142-ffff-ffff0000000c/displayed'
+19:34:09.164 [Forwarding isElementDisplayed on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using open Channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723] for GET '/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0142-ffff-ffff0000000c/displayed'
+19:34:09.176 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler -- 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0142-ffff-ffff0000000c/displayed HTTP/1.1
+Cache-Control: no-cache
+User-Agent: appium/8.6.0 (selenium/4.13.0 (java mac))
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 14
+ETag: W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"
+Date: Mon, 20 Oct 2025 16:34:09 GMT
+Connection: keep-alive
+Keep-Alive: timeout=600
+
+19:34:09.177 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager -- Adding key: http://localhost:4723 for channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]
+19:34:09.178 [Forwarding isElementDisplayed on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using pooled Channel '[id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]' for 'GET' to 'http://localhost:4723/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0142-ffff-ffff0000000c/displayed'
+19:34:09.179 [Forwarding isElementDisplayed on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using open Channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723] for GET '/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0142-ffff-ffff0000000c/displayed'
+19:34:09.186 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler -- 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0142-ffff-ffff0000000c/displayed HTTP/1.1
+Cache-Control: no-cache
+User-Agent: appium/8.6.0 (selenium/4.13.0 (java mac))
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 14
+ETag: W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"
+Date: Mon, 20 Oct 2025 16:34:09 GMT
+Connection: keep-alive
+Keep-Alive: timeout=600
+
+19:34:09.186 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager -- Adding key: http://localhost:4723 for channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]
+19:34:09.187 [Forwarding isElementEnabled on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using pooled Channel '[id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]' for 'GET' to 'http://localhost:4723/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0142-ffff-ffff0000000c/enabled'
+19:34:09.187 [Forwarding isElementEnabled on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using open Channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723] for GET '/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0142-ffff-ffff0000000c/enabled'
+19:34:09.194 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler -- 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0142-ffff-ffff0000000c/enabled HTTP/1.1
+Cache-Control: no-cache
+User-Agent: appium/8.6.0 (selenium/4.13.0 (java mac))
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 14
+ETag: W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"
+Date: Mon, 20 Oct 2025 16:34:09 GMT
+Connection: keep-alive
+Keep-Alive: timeout=600
+
+19:34:09.195 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager -- Adding key: http://localhost:4723 for channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]
+19:34:09.195 [Forwarding clickElement on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using pooled Channel '[id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]' for 'POST' to 'http://localhost:4723/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0142-ffff-ffff0000000c/click'
+19:34:09.195 [Forwarding clickElement on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using open Channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723] for POST '/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0142-ffff-ffff0000000c/click'
+19:34:09.951 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler -- 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0142-ffff-ffff0000000c/click HTTP/1.1
+User-Agent: appium/8.6.0 (selenium/4.13.0 (java mac))
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+Content-Length: 14
+ETag: W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"
+Date: Mon, 20 Oct 2025 16:34:09 GMT
+Connection: keep-alive
+Keep-Alive: timeout=600
+
+19:34:09.952 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager -- Adding key: http://localhost:4723 for channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]
+19:34:09.954 [TestNG-PoolService-1] INFO pages.CommonPage -- Successfully navigated to menu item: App
+19:34:09.954 [TestNG-PoolService-1] INFO pages.CommonPage -- Navigating to menu item: Activity
+19:34:09.956 [Forwarding findElement on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using pooled Channel '[id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]' for 'POST' to 'http://localhost:4723/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element'
+19:34:09.956 [Forwarding findElement on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using open Channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723] for POST '/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element'
+19:34:10.006 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler -- 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element HTTP/1.1
+User-Agent: appium/8.6.0 (selenium/4.13.0 (java mac))
+Content-Length: 98
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+Content-Length: 137
+ETag: W/"89-/jaUr/ZxdBrJmupdifMEd0OMl8E"
+Date: Mon, 20 Oct 2025 16:34:10 GMT
+Connection: keep-alive
+Keep-Alive: timeout=600
+
+19:34:10.006 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager -- Adding key: http://localhost:4723 for channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]
+19:34:10.008 [Forwarding isElementDisplayed on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using pooled Channel '[id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]' for 'GET' to 'http://localhost:4723/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0143-ffff-ffff00000020/displayed'
+19:34:10.009 [Forwarding isElementDisplayed on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using open Channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723] for GET '/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0143-ffff-ffff00000020/displayed'
+19:34:10.021 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler -- 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0143-ffff-ffff00000020/displayed HTTP/1.1
+Cache-Control: no-cache
+User-Agent: appium/8.6.0 (selenium/4.13.0 (java mac))
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 14
+ETag: W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"
+Date: Mon, 20 Oct 2025 16:34:10 GMT
+Connection: keep-alive
+Keep-Alive: timeout=600
+
+19:34:10.021 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager -- Adding key: http://localhost:4723 for channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]
+19:34:10.022 [Forwarding isElementDisplayed on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using pooled Channel '[id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]' for 'GET' to 'http://localhost:4723/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0143-ffff-ffff00000020/displayed'
+19:34:10.022 [Forwarding isElementDisplayed on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using open Channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723] for GET '/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0143-ffff-ffff00000020/displayed'
+19:34:10.033 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler -- 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0143-ffff-ffff00000020/displayed HTTP/1.1
+Cache-Control: no-cache
+User-Agent: appium/8.6.0 (selenium/4.13.0 (java mac))
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 14
+ETag: W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"
+Date: Mon, 20 Oct 2025 16:34:10 GMT
+Connection: keep-alive
+Keep-Alive: timeout=600
+
+19:34:10.033 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager -- Adding key: http://localhost:4723 for channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]
+19:34:10.034 [Forwarding isElementEnabled on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using pooled Channel '[id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]' for 'GET' to 'http://localhost:4723/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0143-ffff-ffff00000020/enabled'
+19:34:10.035 [Forwarding isElementEnabled on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using open Channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723] for GET '/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0143-ffff-ffff00000020/enabled'
+19:34:10.046 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler -- 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0143-ffff-ffff00000020/enabled HTTP/1.1
+Cache-Control: no-cache
+User-Agent: appium/8.6.0 (selenium/4.13.0 (java mac))
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 14
+ETag: W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"
+Date: Mon, 20 Oct 2025 16:34:10 GMT
+Connection: keep-alive
+Keep-Alive: timeout=600
+
+19:34:10.047 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager -- Adding key: http://localhost:4723 for channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]
+19:34:10.049 [Forwarding clickElement on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using pooled Channel '[id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]' for 'POST' to 'http://localhost:4723/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0143-ffff-ffff00000020/click'
+19:34:10.049 [Forwarding clickElement on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using open Channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723] for POST '/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0143-ffff-ffff00000020/click'
+19:34:10.818 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler -- 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0143-ffff-ffff00000020/click HTTP/1.1
+User-Agent: appium/8.6.0 (selenium/4.13.0 (java mac))
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+Content-Length: 14
+ETag: W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"
+Date: Mon, 20 Oct 2025 16:34:10 GMT
+Connection: keep-alive
+Keep-Alive: timeout=600
+
+19:34:10.819 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager -- Adding key: http://localhost:4723 for channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]
+19:34:10.821 [TestNG-PoolService-1] INFO pages.CommonPage -- Successfully navigated to menu item: Activity
+19:34:10.821 [TestNG-PoolService-1] INFO pages.CommonPage -- Navigating to menu item: Custom Title
+19:34:10.823 [Forwarding findElement on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using pooled Channel '[id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]' for 'POST' to 'http://localhost:4723/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element'
+19:34:10.823 [Forwarding findElement on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using open Channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723] for POST '/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element'
+19:34:10.887 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler -- 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element HTTP/1.1
+User-Agent: appium/8.6.0 (selenium/4.13.0 (java mac))
+Content-Length: 102
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+Content-Length: 137
+ETag: W/"89-wChvAOXL+ClkabpzNHOLhlGL+8w"
+Date: Mon, 20 Oct 2025 16:34:10 GMT
+Connection: keep-alive
+Keep-Alive: timeout=600
+
+19:34:10.888 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager -- Adding key: http://localhost:4723 for channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]
+19:34:10.890 [Forwarding isElementDisplayed on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using pooled Channel '[id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]' for 'GET' to 'http://localhost:4723/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0144-ffff-ffff00000039/displayed'
+19:34:10.890 [Forwarding isElementDisplayed on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using open Channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723] for GET '/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0144-ffff-ffff00000039/displayed'
+19:34:10.900 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler -- 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0144-ffff-ffff00000039/displayed HTTP/1.1
+Cache-Control: no-cache
+User-Agent: appium/8.6.0 (selenium/4.13.0 (java mac))
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 14
+ETag: W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"
+Date: Mon, 20 Oct 2025 16:34:10 GMT
+Connection: keep-alive
+Keep-Alive: timeout=600
+
+19:34:10.900 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager -- Adding key: http://localhost:4723 for channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]
+19:34:10.902 [Forwarding isElementDisplayed on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using pooled Channel '[id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]' for 'GET' to 'http://localhost:4723/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0144-ffff-ffff00000039/displayed'
+19:34:10.902 [Forwarding isElementDisplayed on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using open Channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723] for GET '/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0144-ffff-ffff00000039/displayed'
+19:34:10.913 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler -- 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0144-ffff-ffff00000039/displayed HTTP/1.1
+Cache-Control: no-cache
+User-Agent: appium/8.6.0 (selenium/4.13.0 (java mac))
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 14
+ETag: W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"
+Date: Mon, 20 Oct 2025 16:34:10 GMT
+Connection: keep-alive
+Keep-Alive: timeout=600
+
+19:34:10.914 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager -- Adding key: http://localhost:4723 for channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]
+19:34:10.915 [Forwarding isElementEnabled on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using pooled Channel '[id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]' for 'GET' to 'http://localhost:4723/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0144-ffff-ffff00000039/enabled'
+19:34:10.915 [Forwarding isElementEnabled on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using open Channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723] for GET '/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0144-ffff-ffff00000039/enabled'
+19:34:10.927 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler -- 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0144-ffff-ffff00000039/enabled HTTP/1.1
+Cache-Control: no-cache
+User-Agent: appium/8.6.0 (selenium/4.13.0 (java mac))
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 14
+ETag: W/"e-2ZHvAWebNQpyjGZTg6uyV8/spTo"
+Date: Mon, 20 Oct 2025 16:34:10 GMT
+Connection: keep-alive
+Keep-Alive: timeout=600
+
+19:34:10.928 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager -- Adding key: http://localhost:4723 for channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]
+19:34:10.930 [Forwarding clickElement on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using pooled Channel '[id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]' for 'POST' to 'http://localhost:4723/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0144-ffff-ffff00000039/click'
+19:34:10.930 [Forwarding clickElement on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using open Channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723] for POST '/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0144-ffff-ffff00000039/click'
+19:34:11.651 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler -- 
+
+Request DefaultHttpRequest(decodeResult: success, version: HTTP/1.1)
+POST /session/f9731274-69b7-4174-91ce-9f4185bbb0aa/element/00000000-0000-0144-ffff-ffff00000039/click HTTP/1.1
+User-Agent: appium/8.6.0 (selenium/4.13.0 (java mac))
+Content-Length: 50
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Vary: X-HTTP-Method-Override
+Content-Type: application/json; charset=utf-8
+Content-Length: 14
+ETag: W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"
+Date: Mon, 20 Oct 2025 16:34:11 GMT
+Connection: keep-alive
+Keep-Alive: timeout=600
+
+19:34:11.651 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager -- Adding key: http://localhost:4723 for channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]
+19:34:11.653 [TestNG-PoolService-1] INFO pages.CommonPage -- Successfully navigated to menu item: Custom Title
+19:34:11.719 [TestNG-PoolService-1] ERROR stepdefinations.Hooks -- Senaryo BAŞARISIZ: Validate default and updated texts in Custom Title Activity
+19:34:11.729 [Forwarding screenshot on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using pooled Channel '[id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]' for 'GET' to 'http://localhost:4723/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/screenshot'
+19:34:11.730 [Forwarding screenshot on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using open Channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723] for GET '/session/f9731274-69b7-4174-91ce-9f4185bbb0aa/screenshot'
+19:34:12.166 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler -- 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+GET /session/f9731274-69b7-4174-91ce-9f4185bbb0aa/screenshot HTTP/1.1
+Cache-Control: no-cache
+User-Agent: appium/8.6.0 (selenium/4.13.0 (java mac))
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 134500
+ETag: W/"20d64-JWGfRy/ow4sdNZ0ijJjBExE0Dr4"
+Date: Mon, 20 Oct 2025 16:34:12 GMT
+Connection: keep-alive
+Keep-Alive: timeout=600
+
+19:34:12.169 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager -- Adding key: http://localhost:4723 for channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]
+19:34:12.184 [TestNG-PoolService-1] INFO stepdefinations.Hooks -- Ekran görüntüsü alındı ve rapora eklendi.
+19:34:12.186 [Forwarding quit on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using pooled Channel '[id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]' for 'DELETE' to 'http://localhost:4723/session/f9731274-69b7-4174-91ce-9f4185bbb0aa'
+19:34:12.186 [Forwarding quit on session f9731274-69b7-4174-91ce-9f4185bbb0aa to remote] DEBUG org.asynchttpclient.netty.request.NettyRequestSender -- Using open Channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723] for DELETE '/session/f9731274-69b7-4174-91ce-9f4185bbb0aa'
+19:34:12.930 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.handler.HttpHandler -- 
+
+Request DefaultFullHttpRequest(decodeResult: success, version: HTTP/1.1, content: EmptyByteBufBE)
+DELETE /session/f9731274-69b7-4174-91ce-9f4185bbb0aa HTTP/1.1
+User-Agent: appium/8.6.0 (selenium/4.13.0 (java mac))
+Content-Type: application/json; charset=utf-8
+host: localhost:4723
+accept: */*
+
+Response DefaultHttpResponse(decodeResult: success, version: HTTP/1.1)
+HTTP/1.1 200 OK
+X-Powered-By: Express
+Content-Type: application/json; charset=utf-8
+Content-Length: 14
+ETag: W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"
+Date: Mon, 20 Oct 2025 16:34:12 GMT
+Connection: keep-alive
+Keep-Alive: timeout=600
+
+19:34:12.932 [AsyncHttpClient-1-2] DEBUG org.asynchttpclient.netty.channel.ChannelManager -- Adding key: http://localhost:4723 for channel [id: 0xd7e5df04, L:/127.0.0.1:58789 - R:localhost/127.0.0.1:4723]
+19:34:12.940 [TestNG-PoolService-1] INFO driver.DriverManager -- Driver sonlandırıldı. Thread: 32
+]]></system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-10-21T17:33:04 TRT" name="Surefire suite" finished-at="2025-10-21T17:33:16 TRT" duration-ms="12719">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@7da39774]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-10-21T17:33:04 TRT" name="Surefire test" finished-at="2025-10-21T17:33:16 TRT" duration-ms="12719">
+      <class name="runners.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@7da39774]" started-at="2025-10-21T17:33:04 TRT" name="setUpClass" finished-at="2025-10-21T17:33:04 TRT" duration-ms="104" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@608cd501]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@7da39774]" started-at="2025-10-21T17:33:04 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-21T17:33:16 TRT" duration-ms="12555" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify that Options A and B appear after long pressing the Long press me button"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Long Press Context Menu Test"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@7da39774]" started-at="2025-10-21T17:33:16 TRT" name="tearDownClass" finished-at="2025-10-21T17:33:16 TRT" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.TestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

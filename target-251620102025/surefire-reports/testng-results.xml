@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-10-20T19:25:31 TRT" name="Surefire suite" finished-at="2025-10-20T19:25:39 TRT" duration-ms="7561">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@350a94ce]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2025-10-20T19:25:31 TRT" name="Surefire test" finished-at="2025-10-20T19:25:39 TRT" duration-ms="7561">
+      <class name="runners.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:runners.TestRunner@350a94ce]" started-at="2025-10-20T19:25:31 TRT" name="setUpClass" finished-at="2025-10-20T19:25:31 TRT" duration-ms="99" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@35ef439e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:runners.TestRunner@350a94ce]" started-at="2025-10-20T19:25:31 TRT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-10-20T19:25:39 TRT" duration-ms="7435" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Validate default and updated texts in Custom Title Activity"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Custom Title Activity Validation"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed
+at org.testng.Assert.fail(Assert.java:111)
+at pages.BasePage.assertFail(BasePage.java:109)
+at pages.CommonPage.navigateToMenu(CommonPage.java:40)
+at stepdefinations.CommonSteps.theUserNavigatesToMenu(CommonSteps.java:13)
+at ✽.the user navigates to the following menu(file:///Users/katali/Desktop/TeknasyonAppiumQAFramework/src/test/resources/Feature/CustomTitleValidation.feature:5)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runners.TestRunner@350a94ce]" started-at="2025-10-20T19:25:39 TRT" name="tearDownClass" finished-at="2025-10-20T19:25:39 TRT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runners.TestRunner -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
