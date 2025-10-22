@@ -1,50 +1,53 @@
 package driver;
 
-import config.AppSettings;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.options.XCUITestOptions;
-import org.json.simple.JSONObject;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.openqa.selenium.MutableCapabilities;
 
 import java.net.URL;
-import java.time.Duration;
 
 /**
  * Factory implementation for creating iOS-specific AppiumDriver instances.
- * Author: Kadir Atali
+ *
+ * @author Kadir Atali
  */
-public class IOSDriverFactory implements DriverFactory {
-
-    private static final Logger logger = LoggerFactory.getLogger(IOSDriverFactory.class);
+public class IOSDriverFactory extends BaseDriverFactory {
 
     @Override
-    public AppiumDriver createDriver() {
-        try {
-            String appiumServerUrl = AppSettings.getAppiumUrl();
-            JSONObject capabilitiesJson = AppSettings.getCapabilities();
+    public String getPlatformName() {
+        return "iOS";
+    }
 
-            XCUITestOptions options = new XCUITestOptions();
+    @Override
+    protected MutableCapabilities createPlatformOptions() {
+        XCUITestOptions options = new XCUITestOptions();
 
-            // JSON'daki tüm capability'leri options'a ata
-            capabilitiesJson.forEach((key, value) -> {
-                options.setCapability(key.toString(), value);
-                logger.debug("iOS Capability set: {} = {}", key, value);
-            });
+        // Apply common capabilities from config
+        applyCapabilities(options);
 
-            logger.info("iOS driver oluşturuluyor... Thread: {}", Thread.currentThread().getId());
-            AppiumDriver driver = new IOSDriver(new URL(appiumServerUrl), options);
+        // iOS-specific default configurations
+        options.setAutoAcceptAlerts(false);
+        options.setAutoDismissAlerts(false);
 
-            // Varsayılan bekleme süresi
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        logger.debug("iOS XCUITestOptions created");
+        return options;
+    }
 
-            logger.info("iOS driver başarıyla oluşturuldu. Thread: {}", Thread.currentThread().getId());
-            return driver;
+    @Override
+    protected AppiumDriver initializeDriver(URL serverUrl, MutableCapabilities options) {
+        return new IOSDriver(serverUrl, (XCUITestOptions) options);
+    }
 
-        } catch (Exception e) {
-            logger.error("iOS driver oluşturulamadı!", e);
-            throw new RuntimeException("iOS driver oluşturulamadı: " + e.getMessage(), e);
+    @Override
+    protected void validateCapabilities(MutableCapabilities options) {
+        super.validateCapabilities(options);
+
+        // iOS-specific validation
+        if (options.getCapability("bundleId") == null &&
+                options.getCapability("app") == null) {
+            throw new DriverInitializationException(
+                    "Either 'bundleId' or 'app' capability is required for iOS");
         }
     }
 }

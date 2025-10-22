@@ -13,8 +13,8 @@ public class DialogSelectionPage extends BasePage {
     private String listDialogOption;
 
     public void theUserSelectTheOption(String option) {
-        assertVisible(DIALOG_SELECTION_LST(option), "The " + option + " option is not displayed.");
-        clickElement(DIALOG_SELECTION_LST(option));
+        assertVisible(dialogSelectionList(option), "The " + option + " option is not displayed.");
+        clickElement(dialogSelectionList(option));
         logger.info("The user selects the {} option.", option);
     }
 

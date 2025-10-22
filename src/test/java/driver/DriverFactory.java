@@ -3,18 +3,25 @@ package driver;
 import io.appium.java_client.AppiumDriver;
 
 /**
- * The {@code DriverFactory} interface defines a contract for creating
- * platform-specific {@code AppiumDriver} instances.
- * Implementations of this interface should provide platform-specific
- * configuration and initialization for Appium drivers.
+ * Factory interface for creating platform-specific AppiumDriver instances.
+ * Implementations must provide platform-specific configuration and initialization.
+ *
+ * @author Kadir Atali
  */
 public interface DriverFactory {
 
     /**
-     * Creates and returns an instance of {@code AppiumDriver} configured
-     * for the target platform.
+     * Creates and configures an AppiumDriver instance for the target platform.
      *
-     * @return A configured {@code AppiumDriver} instance.
+     * @return Fully configured AppiumDriver instance
+     * @throws DriverInitializationException if driver creation fails
      */
     AppiumDriver createDriver();
+
+    /**
+     * Returns the platform name this factory handles.
+     *
+     * @return Platform name (e.g., "Android", "iOS")
+     */
+    String getPlatformName();
 }

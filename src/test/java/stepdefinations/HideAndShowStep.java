@@ -1,16 +1,11 @@
 package stepdefinations;
 
-import io.cucumber.java.PendingException;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import pages.ContextMenuPage;
 import pages.HideAndShowPage;
 
 public class HideAndShowStep {
     HideAndShowPage hideAndShowPage = new HideAndShowPage();
-
 
 
     @Then("there should be two {string} buttons and two text boxes visible")

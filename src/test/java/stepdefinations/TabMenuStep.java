@@ -29,4 +29,5 @@ public class TabMenuStep {
     public void theOpenedTabInformationShouldBelongTo(String tabName) {
         tabMenuPage.theOpenedTabInformationShouldBelongTo(tabName);
     }
+
 }

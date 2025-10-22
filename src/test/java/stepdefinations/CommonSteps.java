@@ -1,9 +1,7 @@
 package stepdefinations;
 
 import io.cucumber.datatable.DataTable;
-import io.cucumber.java.PendingException;
 import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
 import pages.CommonPage;
 
 public class CommonSteps {

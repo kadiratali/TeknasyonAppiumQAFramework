@@ -1,49 +1,53 @@
 package driver;
 
-import config.AppSettings;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
-import org.json.simple.JSONObject;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.openqa.selenium.MutableCapabilities;
 
 import java.net.URL;
-import java.time.Duration;
 
 /**
  * Factory implementation for creating Android-specific AppiumDriver instances.
- * Author: Kadir Atali
+ *
+ * @author Kadir Atali
  */
-public class AndroidDriverFactory implements DriverFactory {
-
-    private static final Logger logger = LoggerFactory.getLogger(AndroidDriverFactory.class);
+public class AndroidDriverFactory extends BaseDriverFactory {
 
     @Override
-    public AppiumDriver createDriver() {
-        try {
-            String appiumServerUrl = AppSettings.getAppiumUrl();
-            JSONObject capabilitiesJson = AppSettings.getCapabilities();
+    public String getPlatformName() {
+        return "Android";
+    }
 
-            UiAutomator2Options options = new UiAutomator2Options();
+    @Override
+    protected MutableCapabilities createPlatformOptions() {
+        UiAutomator2Options options = new UiAutomator2Options();
 
-            // JSON'daki tüm capability'leri options'a ata
-            capabilitiesJson.forEach((key, value) -> {
-                options.setCapability(key.toString(), value);
-                logger.debug("Android Capability set: {} = {}", key, value);
-            });
+        // Apply common capabilities from config
+        applyCapabilities(options);
 
-            logger.info("Android driver oluşturuluyor... Thread: {}", Thread.currentThread().getId());
-            AppiumDriver driver = new AndroidDriver(new URL(appiumServerUrl), options);
+        // Android-specific default configurations
+        options.setAutoGrantPermissions(true);
+        options.setNoReset(false);
 
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        logger.debug("Android UiAutomator2Options created");
+        return options;
+    }
 
-            logger.info("Android driver başarıyla oluşturuldu. Thread: {}", Thread.currentThread().getId());
-            return driver;
+    @Override
+    protected AppiumDriver initializeDriver(URL serverUrl, MutableCapabilities options) {
+        return new AndroidDriver(serverUrl, (UiAutomator2Options) options);
+    }
 
-        } catch (Exception e) {
-            logger.error("Android driver oluşturulamadı!", e);
-            throw new RuntimeException("Android driver oluşturulamadı: " + e.getMessage(), e);
+    @Override
+    protected void validateCapabilities(MutableCapabilities options) {
+        super.validateCapabilities(options);
+
+        // Android-specific validation
+        if (options.getCapability("appPackage") == null &&
+                options.getCapability("app") == null) {
+            throw new DriverInitializationException(
+                    "Either 'appPackage' or 'app' capability is required for Android");
         }
     }
 }

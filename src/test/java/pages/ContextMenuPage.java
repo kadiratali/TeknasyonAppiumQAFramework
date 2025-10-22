@@ -4,7 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import static constants.ContextMenuConstants.CONTEXT_MENU_LONG_PRESS_ME_BTN;
-import static constants.ContextMenuConstants.CONTEXT_MENU_OPTIONS;
+import static constants.ContextMenuConstants.contextMenuOptions;
 
 public class ContextMenuPage extends BasePage {
 
@@ -18,8 +18,8 @@ public class ContextMenuPage extends BasePage {
     }
 
     public void verifyMenuAAndBVisible(String menuA, String menuB) {
-        assertVisible(CONTEXT_MENU_OPTIONS(menuA), "The " + menuA + " option is not displayed.");
-        assertVisible(CONTEXT_MENU_OPTIONS(menuB), "The " + menuB + " option is not displayed.");
+        assertVisible(contextMenuOptions(menuA), "The " + menuA + " option is not displayed.");
+        assertVisible(contextMenuOptions(menuB), "The " + menuB + " option is not displayed.");
         logger.info("The {} and {} options are displayed.", menuA, menuB);
     }
 }

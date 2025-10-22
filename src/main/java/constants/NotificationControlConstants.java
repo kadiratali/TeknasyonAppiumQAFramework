@@ -1,12 +1,15 @@
 package constants;
 
 import org.openqa.selenium.By;
+import static constants.BaseConstants.ID_PREFIX;
+
+
 
 public class NotificationControlConstants {
     private NotificationControlConstants() {
     }
 
-    public static final By INCOMING_MESSAGE_SHOW_APP_NOTIFICATION = By.id("io.appium.android.apis:id/notify_app");
+    public static final By INCOMING_MESSAGE_SHOW_APP_NOTIFICATION = By.id(ID_PREFIX + "notify_app");
     public static final By NOTIFICATION_HEADER = By.xpath(
             "//android.widget.TextView[@resource-id=\"android:id/text\"]");
 

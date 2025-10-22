@@ -195,7 +195,7 @@ public abstract class BasePage {
         try {
             driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(second));
         }catch (Exception e){
-            assertFail("Driver timeout: ".formatted(e));
+            assertFail("Driver timeout: %s".formatted(e));
         }
     }
 

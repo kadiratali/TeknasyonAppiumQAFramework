@@ -7,7 +7,7 @@ public class DialogSelectionPageConstants {
     private DialogSelectionPageConstants() {
     }
 
-    public static By DIALOG_SELECTION_LST(String option) {
+    public static By dialogSelectionList(String option) {
         return By.xpath("//android.widget.Button[@content-desc='" + option + "']");
     }
 
