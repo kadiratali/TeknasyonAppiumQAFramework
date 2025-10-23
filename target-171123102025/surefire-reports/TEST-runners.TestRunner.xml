@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="runners.TestRunner" time="189.772" tests="7" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="cucumber.features" value="src/test/resources/Feature"/>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/katali/Desktop/TeknasyonAppiumQAFramework/target-171123102025/test-classes:/Users/katali/Desktop/TeknasyonAppiumQAFramework/target-171123102025/classes:/Users/katali/.m2/repository/io/appium/java-client/8.6.0/java-client-8.6.0.jar:/Users/katali/.m2/repository/org/seleniumhq/selenium/selenium-api/4.13.0/selenium-api-4.13.0.jar:/Users/katali/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.13.0/selenium-remote-driver-4.13.0.jar:/Users/katali/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/katali/.m2/repository/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar:/Users/katali/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/katali/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/katali/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/katali/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/Users/katali/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/Users/katali/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/katali/.m2/repository/io/netty/netty-buffer/4.1.96.Final/netty-buffer-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-codec-http/4.1.96.Final/netty-codec-http-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-codec/4.1.96.Final/netty-codec-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-handler/4.1.96.Final/netty-handler-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-common/4.1.96.Final/netty-common-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.96.Final/netty-transport-classes-epoll-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.96.Final/netty-transport-classes-kqueue-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-transport-native-epoll/4.1.96.Final/netty-transport-native-epoll-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.96.Final/netty-transport-native-kqueue-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.96.Final/netty-transport-native-unix-common-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-transport/4.1.96.Final/netty-transport-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-resolver/4.1.96.Final/netty-resolver-4.1.96.Final.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-api/1.28.0/opentelemetry-api-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-context/1.28.0/opentelemetry-context-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.28.0/opentelemetry-exporter-logging-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.28.0/opentelemetry-sdk-metrics-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.28.0-alpha/opentelemetry-extension-incubator-1.28.0-alpha.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.28.0/opentelemetry-sdk-logs-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.28.0/opentelemetry-sdk-common-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.28.0/opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.28.0/opentelemetry-sdk-extension-autoconfigure-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.28.0-alpha/opentelemetry-api-events-1.28.0-alpha.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.28.0/opentelemetry-sdk-trace-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.28.0/opentelemetry-sdk-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha.jar:/Users/katali/.m2/repository/net/bytebuddy/byte-buddy/1.14.5/byte-buddy-1.14.5.jar:/Users/katali/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/katali/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/katali/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/katali/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/katali/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/katali/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/katali/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/katali/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/katali/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/katali/.m2/repository/org/seleniumhq/selenium/selenium-http/4.13.0/selenium-http-4.13.0.jar:/Users/katali/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/katali/.m2/repository/org/seleniumhq/selenium/selenium-json/4.13.0/selenium-json-4.13.0.jar:/Users/katali/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.13.0/selenium-manager-4.13.0.jar:/Users/katali/.m2/repository/org/seleniumhq/selenium/selenium-os/4.13.0/selenium-os-4.13.0.jar:/Users/katali/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/katali/.m2/repository/org/seleniumhq/selenium/selenium-support/4.13.0/selenium-support-4.13.0.jar:/Users/katali/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/katali/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/Users/katali/.m2/repository/commons-io/commons-io/2.14.0/commons-io-2.14.0.jar:/Users/katali/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/katali/.m2/repository/io/cucumber/cucumber-java/7.18.1/cucumber-java-7.18.1.jar:/Users/katali/.m2/repository/io/cucumber/cucumber-core/7.18.1/cucumber-core-7.18.1.jar:/Users/katali/.m2/repository/io/cucumber/cucumber-gherkin/7.18.1/cucumber-gherkin-7.18.1.jar:/Users/katali/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.18.1/cucumber-gherkin-messages-7.18.1.jar:/Users/katali/.m2/repository/io/cucumber/gherkin/28.0.0/gherkin-28.0.0.jar:/Users/katali/.m2/repository/io/cucumber/messages/24.1.0/messages-24.1.0.jar:/Users/katali/.m2/repository/io/cucumber/testng-xml-formatter/0.2.0/testng-xml-formatter-0.2.0.jar:/Users/katali/.m2/repository/io/cucumber/query/12.2.0/query-12.2.0.jar:/Users/katali/.m2/repository/io/cucumber/tag-expressions/6.1.0/tag-expressions-6.1.0.jar:/Users/katali/.m2/repository/io/cucumber/cucumber-expressions/17.1.0/cucumber-expressions-17.1.0.jar:/Users/katali/.m2/repository/io/cucumber/datatable/7.18.1/datatable-7.18.1.jar:/Users/katali/.m2/repository/io/cucumber/cucumber-plugin/7.18.1/cucumber-plugin-7.18.1.jar:/Users/katali/.m2/repository/io/cucumber/docstring/7.18.1/docstring-7.18.1.jar:/Users/katali/.m2/repository/io/cucumber/html-formatter/21.4.1/html-formatter-21.4.1.jar:/Users/katali/.m2/repository/io/cucumber/junit-xml-formatter/0.5.0/junit-xml-formatter-0.5.0.jar:/Users/katali/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar:/Users/katali/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/katali/.m2/repository/io/cucumber/cucumber-testng/7.18.1/cucumber-testng-7.18.1.jar:/Users/katali/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/katali/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/katali/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/katali/.m2/repository/io/qameta/allure/allure-cucumber7-jvm/2.29.0/allure-cucumber7-jvm-2.29.0.jar:/Users/katali/.m2/repository/io/qameta/allure/allure-java-commons/2.29.0/allure-java-commons-2.29.0.jar:/Users/katali/.m2/repository/io/qameta/allure/allure-model/2.29.0/allure-model-2.29.0.jar:/Users/katali/.m2/repository/io/qameta/allure/allure-testng/2.29.0/allure-testng-2.29.0.jar:/Users/katali/.m2/repository/io/qameta/allure/allure-test-filter/2.29.0/allure-test-filter-2.29.0.jar:/Users/katali/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/Users/katali/.m2/repository/junit/junit/4.10/junit-4.10.jar:/Users/katali/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/Users/katali/.m2/repository/ch/qos/logback/logback-classic/1.5.13/logback-classic-1.5.13.jar:/Users/katali/.m2/repository/ch/qos/logback/logback-core/1.5.13/logback-core-1.5.13.jar:"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Europe/Istanbul"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="dataproviderthreadcount" value="1"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="TR"/>
+    <property name="sun.boot.library.path" value="/Users/katali/.sdkman/candidates/java/21.0.2-tem/lib"/>
+    <property name="sun.java.command" value="/Users/katali/Desktop/TeknasyonAppiumQAFramework/target-171123102025/surefire/surefirebooter-20251023141756785_3.jar /Users/katali/Desktop/TeknasyonAppiumQAFramework/target-171123102025/surefire 2025-10-23T14-17-56_742-jvmRun1 surefire-20251023141756785_1tmp surefire_0-20251023141756785_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/katali/Desktop/TeknasyonAppiumQAFramework/target-171123102025/test-classes:/Users/katali/Desktop/TeknasyonAppiumQAFramework/target-171123102025/classes:/Users/katali/.m2/repository/io/appium/java-client/8.6.0/java-client-8.6.0.jar:/Users/katali/.m2/repository/org/seleniumhq/selenium/selenium-api/4.13.0/selenium-api-4.13.0.jar:/Users/katali/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.13.0/selenium-remote-driver-4.13.0.jar:/Users/katali/.m2/repository/com/google/auto/service/auto-service-annotations/1.1.1/auto-service-annotations-1.1.1.jar:/Users/katali/.m2/repository/com/google/guava/guava/32.1.2-jre/guava-32.1.2-jre.jar:/Users/katali/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/katali/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/katali/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/katali/.m2/repository/org/checkerframework/checker-qual/3.33.0/checker-qual-3.33.0.jar:/Users/katali/.m2/repository/com/google/errorprone/error_prone_annotations/2.18.0/error_prone_annotations-2.18.0.jar:/Users/katali/.m2/repository/com/google/j2objc/j2objc-annotations/2.8/j2objc-annotations-2.8.jar:/Users/katali/.m2/repository/io/netty/netty-buffer/4.1.96.Final/netty-buffer-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-codec-http/4.1.96.Final/netty-codec-http-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-codec/4.1.96.Final/netty-codec-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-handler/4.1.96.Final/netty-handler-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-common/4.1.96.Final/netty-common-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.96.Final/netty-transport-classes-epoll-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.96.Final/netty-transport-classes-kqueue-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-transport-native-epoll/4.1.96.Final/netty-transport-native-epoll-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.96.Final/netty-transport-native-kqueue-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.96.Final/netty-transport-native-unix-common-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-transport/4.1.96.Final/netty-transport-4.1.96.Final.jar:/Users/katali/.m2/repository/io/netty/netty-resolver/4.1.96.Final/netty-resolver-4.1.96.Final.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-api/1.28.0/opentelemetry-api-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-context/1.28.0/opentelemetry-context-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.28.0/opentelemetry-exporter-logging-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.28.0/opentelemetry-sdk-metrics-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-extension-incubator/1.28.0-alpha/opentelemetry-extension-incubator-1.28.0-alpha.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.28.0/opentelemetry-sdk-logs-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.28.0/opentelemetry-sdk-common-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.28.0/opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.28.0/opentelemetry-sdk-extension-autoconfigure-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.28.0-alpha/opentelemetry-api-events-1.28.0-alpha.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.28.0/opentelemetry-sdk-trace-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.28.0/opentelemetry-sdk-1.28.0.jar:/Users/katali/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.28.0-alpha/opentelemetry-semconv-1.28.0-alpha.jar:/Users/katali/.m2/repository/net/bytebuddy/byte-buddy/1.14.5/byte-buddy-1.14.5.jar:/Users/katali/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/katali/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/katali/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/katali/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/katali/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/katali/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/katali/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/katali/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/katali/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/katali/.m2/repository/org/seleniumhq/selenium/selenium-http/4.13.0/selenium-http-4.13.0.jar:/Users/katali/.m2/repository/dev/failsafe/failsafe/3.3.2/failsafe-3.3.2.jar:/Users/katali/.m2/repository/org/seleniumhq/selenium/selenium-json/4.13.0/selenium-json-4.13.0.jar:/Users/katali/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.13.0/selenium-manager-4.13.0.jar:/Users/katali/.m2/repository/org/seleniumhq/selenium/selenium-os/4.13.0/selenium-os-4.13.0.jar:/Users/katali/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/katali/.m2/repository/org/seleniumhq/selenium/selenium-support/4.13.0/selenium-support-4.13.0.jar:/Users/katali/.m2/repository/com/google/code/gson/gson/2.10.1/gson-2.10.1.jar:/Users/katali/.m2/repository/org/apache/commons/commons-lang3/3.13.0/commons-lang3-3.13.0.jar:/Users/katali/.m2/repository/commons-io/commons-io/2.14.0/commons-io-2.14.0.jar:/Users/katali/.m2/repository/org/slf4j/slf4j-api/2.0.9/slf4j-api-2.0.9.jar:/Users/katali/.m2/repository/io/cucumber/cucumber-java/7.18.1/cucumber-java-7.18.1.jar:/Users/katali/.m2/repository/io/cucumber/cucumber-core/7.18.1/cucumber-core-7.18.1.jar:/Users/katali/.m2/repository/io/cucumber/cucumber-gherkin/7.18.1/cucumber-gherkin-7.18.1.jar:/Users/katali/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.18.1/cucumber-gherkin-messages-7.18.1.jar:/Users/katali/.m2/repository/io/cucumber/gherkin/28.0.0/gherkin-28.0.0.jar:/Users/katali/.m2/repository/io/cucumber/messages/24.1.0/messages-24.1.0.jar:/Users/katali/.m2/repository/io/cucumber/testng-xml-formatter/0.2.0/testng-xml-formatter-0.2.0.jar:/Users/katali/.m2/repository/io/cucumber/query/12.2.0/query-12.2.0.jar:/Users/katali/.m2/repository/io/cucumber/tag-expressions/6.1.0/tag-expressions-6.1.0.jar:/Users/katali/.m2/repository/io/cucumber/cucumber-expressions/17.1.0/cucumber-expressions-17.1.0.jar:/Users/katali/.m2/repository/io/cucumber/datatable/7.18.1/datatable-7.18.1.jar:/Users/katali/.m2/repository/io/cucumber/cucumber-plugin/7.18.1/cucumber-plugin-7.18.1.jar:/Users/katali/.m2/repository/io/cucumber/docstring/7.18.1/docstring-7.18.1.jar:/Users/katali/.m2/repository/io/cucumber/html-formatter/21.4.1/html-formatter-21.4.1.jar:/Users/katali/.m2/repository/io/cucumber/junit-xml-formatter/0.5.0/junit-xml-formatter-0.5.0.jar:/Users/katali/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar:/Users/katali/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/katali/.m2/repository/io/cucumber/cucumber-testng/7.18.1/cucumber-testng-7.18.1.jar:/Users/katali/.m2/repository/org/testng/testng/7.10.2/testng-7.10.2.jar:/Users/katali/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/katali/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/katali/.m2/repository/io/qameta/allure/allure-cucumber7-jvm/2.29.0/allure-cucumber7-jvm-2.29.0.jar:/Users/katali/.m2/repository/io/qameta/allure/allure-java-commons/2.29.0/allure-java-commons-2.29.0.jar:/Users/katali/.m2/repository/io/qameta/allure/allure-model/2.29.0/allure-model-2.29.0.jar:/Users/katali/.m2/repository/io/qameta/allure/allure-testng/2.29.0/allure-testng-2.29.0.jar:/Users/katali/.m2/repository/io/qameta/allure/allure-test-filter/2.29.0/allure-test-filter-2.29.0.jar:/Users/katali/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/Users/katali/.m2/repository/junit/junit/4.10/junit-4.10.jar:/Users/katali/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/Users/katali/.m2/repository/ch/qos/logback/logback-classic/1.5.13/logback-classic-1.5.13.jar:/Users/katali/.m2/repository/ch/qos/logback/logback-core/1.5.13/logback-core-1.5.13.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="allure.results.directory" value="/Users/katali/Desktop/TeknasyonAppiumQAFramework/target-171123102025/allure-results"/>
+    <property name="user.home" value="/Users/katali"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2024-01-16"/>
+    <property name="java.home" value="/Users/katali/.sdkman/candidates/java/21.0.2-tem"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/katali/Desktop/TeknasyonAppiumQAFramework"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/katali/Desktop/TeknasyonAppiumQAFramework/target-171123102025/surefire/surefirebooter-20251023141756785_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="21.0.2+13-LTS"/>
+    <property name="user.name" value="katali"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.5"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="browser" value="chrome"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-21.0.2+13"/>
+    <property name="localRepository" value="/Users/katali/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/89/p9vwmd697t94vh6bjdl14h900000gn/T/"/>
+    <property name="java.version" value="21.0.2"/>
+    <property name="cucumber.filter.tags" value="@Regression"/>
+    <property name="user.dir" value="/Users/katali/Desktop/TeknasyonAppiumQAFramework"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/katali/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="21.0.2+13-LTS"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="65.0"/>
+  </properties>
+  <testcase name="runScenario[&quot;Verify adding and removing Action Bar Tabs&quot;, &quot;Manage Action Bar Tabs in the App&quot;](1)" classname="runners.TestRunner" time="21.242">
+    <failure message="Redirected to the action bar page." type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Redirected to the action bar page.
+	at org.testng.Assert.fail(Assert.java:111)
+	at pages.BasePage.assertFail(BasePage.java:123)
+	at pages.ActionBarTabPage.theUserAddsNewTabs(ActionBarTabPage.java:48)
+	at stepdefinations.ActionBarTabStep.theUserAddsNewTabs(ActionBarTabStep.java:18)
+	at ✽.the user adds 3 new tabs(file:///Users/katali/Desktop/TeknasyonAppiumQAFramework/src/test/resources/Feature/ActionBarTabs.feature:11)
+]]></failure>
+    <system-out><![CDATA[2025-10-23 14:17:58 INFO  config.AppSettings - Konfigürasyon yüklendi. Platform: android
+2025-10-23 14:17:58 INFO  stepdefinations.Hooks - Senaryo başlıyor: Verify adding and removing Action Bar Tabs [Thread: 32]
+2025-10-23 14:17:58 INFO  driver.DriverManager - Initializing driver for platform: android on thread: 32
+2025-10-23 14:17:58 INFO  driver.BaseDriverFactory - Creating Android driver for thread: 32
+2025-10-23 14:18:04 INFO  driver.BaseDriverFactory - Android driver successfully created for thread: 32
+2025-10-23 14:18:04 INFO  driver.DriverManager - Driver successfully initialized for thread: 32
+2025-10-23 14:18:04 INFO  pages.CommonPage - Navigating to menu item: App
+2025-10-23 14:18:05 INFO  pages.CommonPage - Successfully navigated to menu item: App
+2025-10-23 14:18:05 INFO  pages.CommonPage - Navigating to menu item: Action Bar
+2025-10-23 14:18:06 INFO  pages.CommonPage - Successfully navigated to menu item: Action Bar
+2025-10-23 14:18:06 INFO  pages.CommonPage - Navigating to menu item: Action Bar Tabs
+2025-10-23 14:18:07 INFO  pages.CommonPage - Successfully navigated to menu item: Action Bar Tabs
+2025-10-23 14:18:12 INFO  pages.ActionBarTabPage - The Toggle tab mode option should be inactive.
+2025-10-23 14:18:13 INFO  pages.ActionBarTabPage - The user adds 3 new tabs.
+2025-10-23 14:18:13 ERROR stepdefinations.Hooks - Senaryo BAŞARISIZ: Verify adding and removing Action Bar Tabs
+2025-10-23 14:18:13 INFO  stepdefinations.Hooks - Ekran görüntüsü alındı ve rapora eklendi.
+2025-10-23 14:18:19 INFO  driver.DriverManager - Driver quit successfully for thread: 32
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify that Options A and B appear after long pressing the Long press me button&quot;, &quot;Long Press Context Menu Test&quot;](2)" classname="runners.TestRunner" time="17.588">
+    <system-out><![CDATA[2025-10-23 14:18:19 INFO  stepdefinations.Hooks - Senaryo başlıyor: Verify that Options A and B appear after long pressing the Long press me button [Thread: 32]
+2025-10-23 14:18:19 INFO  driver.DriverManager - Initializing driver for platform: android on thread: 32
+2025-10-23 14:18:19 INFO  driver.BaseDriverFactory - Creating Android driver for thread: 32
+2025-10-23 14:18:22 INFO  driver.BaseDriverFactory - Android driver successfully created for thread: 32
+2025-10-23 14:18:22 INFO  driver.DriverManager - Driver successfully initialized for thread: 32
+2025-10-23 14:18:22 INFO  pages.CommonPage - Navigating to menu item: App
+2025-10-23 14:18:24 INFO  pages.CommonPage - Successfully navigated to menu item: App
+2025-10-23 14:18:24 INFO  pages.CommonPage - Navigating to menu item: Fragment
+2025-10-23 14:18:25 INFO  pages.CommonPage - Successfully navigated to menu item: Fragment
+2025-10-23 14:18:25 INFO  pages.CommonPage - Navigating to menu item: Context Menu
+2025-10-23 14:18:26 INFO  pages.CommonPage - Successfully navigated to menu item: Context Menu
+2025-10-23 14:18:31 INFO  pages.ContextMenuPage - The user long presses the Long press me button.
+2025-10-23 14:18:31 INFO  pages.ContextMenuPage - The Menu A and Menu B options are displayed.
+2025-10-23 14:18:31 INFO  stepdefinations.Hooks - Senaryo BAŞARILI: Verify that Options A and B appear after long pressing the Long press me button
+2025-10-23 14:18:36 INFO  driver.DriverManager - Driver quit successfully for thread: 32
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Validate default and updated texts in Custom Title Activity&quot;, &quot;Custom Title Update&quot;](3)" classname="runners.TestRunner" time="17.588">
+    <system-out><![CDATA[2025-10-23 14:18:36 INFO  stepdefinations.Hooks - Senaryo başlıyor: Validate default and updated texts in Custom Title Activity [Thread: 32]
+2025-10-23 14:18:36 INFO  driver.DriverManager - Initializing driver for platform: android on thread: 32
+2025-10-23 14:18:36 INFO  driver.BaseDriverFactory - Creating Android driver for thread: 32
+2025-10-23 14:18:40 INFO  driver.BaseDriverFactory - Android driver successfully created for thread: 32
+2025-10-23 14:18:40 INFO  driver.DriverManager - Driver successfully initialized for thread: 32
+2025-10-23 14:18:40 INFO  stepdefinations.Hooks - Senaryo @ResetAppBeforeTest tag'ine sahip. Uygulama yeniden yükleniyor...
+2025-10-23 14:18:41 INFO  stepdefinations.Hooks - Android uygulama yeniden yüklendi. [Thread: 32]
+2025-10-23 14:18:41 INFO  pages.CommonPage - Navigating to menu item: App
+2025-10-23 14:18:43 INFO  pages.CommonPage - Successfully navigated to menu item: App
+2025-10-23 14:18:43 INFO  pages.CommonPage - Navigating to menu item: Activity
+2025-10-23 14:18:44 INFO  pages.CommonPage - Successfully navigated to menu item: Activity
+2025-10-23 14:18:44 INFO  pages.CommonPage - Navigating to menu item: Custom Title
+2025-10-23 14:18:45 INFO  pages.CommonPage - Successfully navigated to menu item: Custom Title
+2025-10-23 14:18:45 INFO  pages.CustomTitleUpdatePage - The default text box and navigation bar texts are displayed.
+2025-10-23 14:18:46 INFO  pages.CustomTitleUpdatePage - The user updates the left text box to Left Updated Text.
+2025-10-23 14:18:48 INFO  pages.CustomTitleUpdatePage - The user updates the right text box to Right Updated Text.
+2025-10-23 14:18:48 INFO  pages.CustomTitleUpdatePage - The updated texts are shown in all text fields and navigation bar.
+2025-10-23 14:18:48 INFO  stepdefinations.Hooks - Senaryo BAŞARILI: Validate default and updated texts in Custom Title Activity
+2025-10-23 14:18:54 INFO  driver.DriverManager - Driver quit successfully for thread: 32
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Hide and Show buttons functionality&quot;, &quot;Hide and Show Menu&quot;](4)" classname="runners.TestRunner" time="25.723">
+    <system-out><![CDATA[2025-10-23 14:18:54 INFO  stepdefinations.Hooks - Senaryo başlıyor: Hide and Show buttons functionality [Thread: 32]
+2025-10-23 14:18:54 INFO  driver.DriverManager - Initializing driver for platform: android on thread: 32
+2025-10-23 14:18:54 INFO  driver.BaseDriverFactory - Creating Android driver for thread: 32
+2025-10-23 14:18:59 INFO  driver.BaseDriverFactory - Android driver successfully created for thread: 32
+2025-10-23 14:18:59 INFO  driver.DriverManager - Driver successfully initialized for thread: 32
+2025-10-23 14:18:59 INFO  pages.CommonPage - Navigating to menu item: App
+2025-10-23 14:19:00 INFO  pages.CommonPage - Successfully navigated to menu item: App
+2025-10-23 14:19:00 INFO  pages.CommonPage - Navigating to menu item: Fragment
+2025-10-23 14:19:01 INFO  pages.CommonPage - Successfully navigated to menu item: Fragment
+2025-10-23 14:19:01 INFO  pages.CommonPage - Navigating to menu item: Hide and Show
+2025-10-23 14:19:02 INFO  pages.CommonPage - Successfully navigated to menu item: Hide and Show
+2025-10-23 14:19:02 INFO  pages.HideAndShowPage - There should be two buttons and two text boxes visible.
+2025-10-23 14:19:02 INFO  pages.HideAndShowPage - The second Hide button is clicked.
+2025-10-23 14:19:13 INFO  pages.HideAndShowPage - The corresponding text box should be hidden and the button text should change to Show.
+2025-10-23 14:19:14 INFO  pages.HideAndShowPage - The user clicks the show button.
+2025-10-23 14:19:14 INFO  pages.HideAndShowPage - The second text box should be visible.
+2025-10-23 14:19:14 INFO  stepdefinations.Hooks - Senaryo BAŞARILI: Hide and Show buttons functionality
+2025-10-23 14:19:20 INFO  driver.DriverManager - Driver quit successfully for thread: 32
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify the order and name of the selected element in the list dialog&quot;, &quot;List Dialog Selection&quot;](5)" classname="runners.TestRunner" time="13.538">
+    <system-out><![CDATA[2025-10-23 14:19:20 INFO  stepdefinations.Hooks - Senaryo başlıyor: Verify the order and name of the selected element in the list dialog [Thread: 32]
+2025-10-23 14:19:20 INFO  driver.DriverManager - Initializing driver for platform: android on thread: 32
+2025-10-23 14:19:20 INFO  driver.BaseDriverFactory - Creating Android driver for thread: 32
+2025-10-23 14:19:24 INFO  driver.BaseDriverFactory - Android driver successfully created for thread: 32
+2025-10-23 14:19:24 INFO  driver.DriverManager - Driver successfully initialized for thread: 32
+2025-10-23 14:19:24 INFO  pages.CommonPage - Navigating to menu item: App
+2025-10-23 14:19:25 INFO  pages.CommonPage - Successfully navigated to menu item: App
+2025-10-23 14:19:25 INFO  pages.CommonPage - Navigating to menu item: Alert Dialogs
+2025-10-23 14:19:26 INFO  pages.CommonPage - Successfully navigated to menu item: Alert Dialogs
+2025-10-23 14:19:26 INFO  pages.DialogSelectionPage - The user selects the List dialog option.
+2025-10-23 14:19:28 INFO  pages.DialogSelectionPage - The user selects a random element from the List Dialog list.
+2025-10-23 14:19:28 INFO  pages.DialogSelectionPage - The alert displays the correct element name and position.
+2025-10-23 14:19:28 INFO  stepdefinations.Hooks - Senaryo BAŞARILI: Verify the order and name of the selected element in the list dialog
+2025-10-23 14:19:33 INFO  driver.DriverManager - Driver quit successfully for thread: 32
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Verify that incoming notifications are shown and details match&quot;, &quot;Incoming Message Notification&quot;](6)" classname="runners.TestRunner" time="16.851">
+    <system-out><![CDATA[2025-10-23 14:19:33 INFO  stepdefinations.Hooks - Senaryo başlıyor: Verify that incoming notifications are shown and details match [Thread: 32]
+2025-10-23 14:19:33 INFO  driver.DriverManager - Initializing driver for platform: android on thread: 32
+2025-10-23 14:19:33 INFO  driver.BaseDriverFactory - Creating Android driver for thread: 32
+2025-10-23 14:19:37 INFO  driver.BaseDriverFactory - Android driver successfully created for thread: 32
+2025-10-23 14:19:37 INFO  driver.DriverManager - Driver successfully initialized for thread: 32
+2025-10-23 14:19:37 INFO  pages.CommonPage - Navigating to menu item: App
+2025-10-23 14:19:38 INFO  pages.CommonPage - Successfully navigated to menu item: App
+2025-10-23 14:19:38 INFO  pages.CommonPage - Navigating to menu item: Notification
+2025-10-23 14:19:39 INFO  pages.CommonPage - Successfully navigated to menu item: Notification
+2025-10-23 14:19:39 INFO  pages.CommonPage - Navigating to menu item: IncomingMessage
+2025-10-23 14:19:40 INFO  pages.CommonPage - Successfully navigated to menu item: IncomingMessage
+2025-10-23 14:19:40 INFO  pages.NotificationControlPage - The user clicks the Show Notification button.
+2025-10-23 14:19:40 INFO  pages.NotificationControlPage - The notification bar should be displayed.
+2025-10-23 14:19:40 INFO  pages.BasePage - Notification bar opened on Android device.
+2025-10-23 14:19:43 INFO  pages.NotificationControlPage - The notification is clicked.
+2025-10-23 14:19:43 INFO  pages.NotificationControlPage - The notification detail page should open.
+2025-10-23 14:19:45 INFO  pages.NotificationControlPage - The notification detail page should open.
+2025-10-23 14:19:45 INFO  pages.NotificationControlPage - The text in the notification bar should match the text in the detail page.
+2025-10-23 14:19:45 INFO  stepdefinations.Hooks - Senaryo BAŞARILI: Verify that incoming notifications are shown and details match
+2025-10-23 14:19:50 INFO  driver.DriverManager - Driver quit successfully for thread: 32
+]]></system-out>
+  </testcase>
+  <testcase name="runScenario[&quot;Navigating to the last tab in Scrollable Tabs and verifying Tab 30&quot;, &quot;Scrollable Tabs Navigation&quot;](7)" classname="runners.TestRunner" time="76.261">
+    <system-out><![CDATA[2025-10-23 14:19:50 INFO  stepdefinations.Hooks - Senaryo başlıyor: Navigating to the last tab in Scrollable Tabs and verifying Tab 30 [Thread: 32]
+2025-10-23 14:19:50 INFO  driver.DriverManager - Initializing driver for platform: android on thread: 32
+2025-10-23 14:19:50 INFO  driver.BaseDriverFactory - Creating Android driver for thread: 32
+2025-10-23 14:19:55 INFO  driver.BaseDriverFactory - Android driver successfully created for thread: 32
+2025-10-23 14:19:55 INFO  driver.DriverManager - Driver successfully initialized for thread: 32
+2025-10-23 14:19:55 INFO  stepdefinations.Hooks - Senaryo @ResetAppBeforeTest tag'ine sahip. Uygulama yeniden yükleniyor...
+2025-10-23 14:19:56 INFO  stepdefinations.Hooks - Android uygulama yeniden yüklendi. [Thread: 32]
+2025-10-23 14:19:56 INFO  pages.CommonPage - Navigating to menu item: Views
+2025-10-23 14:19:58 INFO  pages.CommonPage - Successfully navigated to menu item: Views
+2025-10-23 14:20:08 INFO  pages.BasePage - Condition not met: Expected condition failed: waiting for visibility of element located by By.xpath: //android.widget.TextView[@content-desc='Tabs'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.13.0', revision: 'ba948ece5b*'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.5', java.version: '21.0.2'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:app: /Users/katali/Desktop/Tekna..., appium:appActivity: io.appium.android.apis.ApiD..., appium:appPackage: io.appium.android.apis, appium:autoGrantPermissions: true, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {app: /Users/katali/Desktop/Tekna..., appPackage: io.appium.android.apis, autoGrantPermissions: true, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID, platformVersion: 12.0}, appium:deviceApiLevel: 31, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2280, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.75, appium:platformVersion: 12, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2214, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 44e0d35c-a498-4d08-910d-87ae9004b9dd
+2025-10-23 14:20:16 INFO  pages.TabMenuPage - The user scrolls to the Tabs menu.
+2025-10-23 14:20:17 INFO  pages.TabMenuPage - The user navigates to the 5. Scrollable menu.
+2025-10-23 14:21:00 INFO  pages.TabMenuPage - The user clicks the TAB 30 tab.
+2025-10-23 14:21:01 INFO  pages.TabMenuPage - The opened tab information should belong to Tab 30.
+2025-10-23 14:21:01 INFO  stepdefinations.Hooks - Senaryo BAŞARILI: Navigating to the last tab in Scrollable Tabs and verifying Tab 30
+2025-10-23 14:21:06 INFO  driver.DriverManager - Driver quit successfully for thread: 32
+]]></system-out>
+  </testcase>
+</testsuite>

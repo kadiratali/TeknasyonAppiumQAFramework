@@ -1,5 +1,6 @@
 package stepdefinations;
 
+import com.google.common.collect.ImmutableMap;
 import config.AppSettings;
 import driver.DriverManager;
 import io.appium.java_client.AppiumDriver;
@@ -32,10 +33,16 @@ public class Hooks {
         logger.info("Senaryo başlıyor: {} [Thread: {}]", scenario.getName(), Thread.currentThread().getId());
 
         DriverManager.initializeDriver();
+
         if (scenario.getSourceTagNames().contains(TARGET_TAG)) {
             logger.info("Senaryo @ResetAppBeforeTest tag'ine sahip. Uygulama yeniden yükleniyor...");
             AppiumDriver driver = DriverManager.getDriver();
             reinstallApp(driver);
+        }
+
+        if (scenario.getSourceTagNames().contains("@ClearCache")) {
+            AppiumDriver driver = DriverManager.getDriver();
+            clearCache(driver);
         }
     }
 
@@ -110,5 +117,10 @@ public class Hooks {
             logger.error("iOS uygulama yeniden yüklenirken hata!", e);
             throw new RuntimeException("iOS uygulama yeniden yüklenemedi", e);
         }
+    }
+
+    private void clearCache(AppiumDriver driver) {
+        driver.executeScript("mobile: clearApp", ImmutableMap.of("appId", APP_PACKAGE));
+        driver.executeScript("mobile: activateApp", ImmutableMap.of("appId", APP_PACKAGE));
     }
 }
